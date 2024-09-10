@@ -1,0 +1,81 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  text-align: center;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+header.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-container, .table-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.table-container {
+  overflow-x: auto; /* Allow horizontal scrolling for tables if needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.hash-col, .pubkey-col {
+  font-size: 0.5rem; /* Smaller font size for Hash and Public Key */
+}
+
+.hash-col {
+  max-width: 200px; /* Restrict width of Hash column */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pubkey-col {
+  max-width: 200px; /* Restrict width of Public Key column */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
